@@ -1,0 +1,82 @@
+/* Name:Landon Bester Student Number: 9009041 */
+
+
+/* Font size and style is set and background of website is a very light blue*/
+html {
+    font: 20px/1.5 'Arial', sans-serif;
+    background-color: #f0f8ff;
+}
+
+/* Body */
+/* Max width for the body so it doenst go to wide, margin 0 centers it with padding and border*/
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 0.2rem solid #ccc;
+    box-sizing: border-box;
+}
+
+/* all texts is centerd using small cpas itqallic and bold using gerogia font with a redish colour*/
+h1, h2, h3 {
+    text-align: center;
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    color: crimson;
+}
+
+
+/*Main section background colour is light gray padding adds some spacing */ 
+.main-section {
+    background-color: #ededed;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+
+/* Background of the title added some white to light blue fade to help the red text pop added a bottom border*/
+#top {
+    background: linear-gradient(90deg, rgb(255, 255, 255), lightblue);
+    padding: 1rem;
+    border-bottom: 0.3rem solid #333;
+}
+
+/* making the title h1 and making it a bigger font size. */
+#top h1 {
+    font-size: 2.5rem;
+}
+
+
+/* all h2 elements set up for readbilty with a gray colour and font size*/
+section h2 {
+    font-size: 1.8rem;
+    color: #444;
+}
+
+
+/* Floats the main section elements to the left with 70% width and adds a margin below. */
+main > section {
+    margin-bottom: 2rem;
+    float: left;
+    width: 70%;
+}
+
+/* aligning the side 30% width to the main section */
+aside {
+    float: right;
+    width: 30%;
+}
+
+
+/* no floated elements affect the footer */
+/* Nice faded back ground for the footer matching the team canada jersey and centerd. */
+footer {
+    clear: both;
+    font-size: 0.8rem;
+    text-align: center;
+    background: linear-gradient(90deg, rgb(74, 66, 66), rgb(214, 78, 78));
+    padding: 1rem;
+}
