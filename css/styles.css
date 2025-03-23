@@ -76,7 +76,96 @@ aside {
 footer {
     clear: both;
     font-size: 0.8rem;
+    color: #000000;
     text-align: center;
-    background: linear-gradient(90deg, rgb(74, 66, 66), rgb(214, 78, 78));
+    background: linear-gradient(90deg, rgb(155, 136, 136), rgb(214, 78, 78));
     padding: 1rem;
+}
+/* editing the quote font and colour to make it look more like a quote, added a box with a shadow to make it pop*/
+q {
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: 500;
+    font-family: 'Tahoma', sans-serif;
+    color: #666;
+    border: 0.2rem solid #ddd;
+    box-shadow: 0.2rem 0.2rem 0.5rem #999;
+}
+
+/* wording under image has a box to show its apart of the image.*/
+figure {
+    background-color: #f7f7f7;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.7rem;
+    padding: 1rem;
+}
+
+/* caption under the image font changes*/
+figcaption {
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Verdana', sans-serif;
+    color: #333;
+}
+/* Black border around image to make it pop*/
+img {
+    border: 0.3rem solid #000000;
+    border-radius: 0.5rem;
+}
+
+/* Video border */
+video {
+    border: 0.3rem solid #df4343;
+    border-radius: 0.5rem;
+}
+
+/* List*/
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+/* List of links and colour */
+ul li a {
+    text-decoration: none;
+    color: crimson;
+    line-height: 1.8rem;
+}
+/* when hovering over the red  links it will turn black to show the user is on the link*/
+ul li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* labels above text boxes.*/
+label {
+    font-variant: small-caps;
+    color: #555;
+    font-weight: bold;  
+    display: block;
+    margin-bottom: 0.5rem;
+}
+/* input boxes setup and colour*/
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 0.2rem solid #ccc;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    main, aside {
+        float: none;
+        width: 100%;
+    }
+
+    body {
+        padding: 1rem;
+    }
 }
